@@ -1,0 +1,174 @@
+@font-face {
+    font-family: D-DIN-Medium;
+    src: url(./fonts/D-DIN.woff2) format("woff2"),url(./fonts/D-DIN.woff) format("woff"),url(./fonts/D-DIN.otf) format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: block
+}
+
+@font-face {
+    font-family: D-DIN-Light;
+    src: url(./fonts/D-DIN.woff2) format("woff2"),url(./fonts/D-DIN.woff) format("woff"),url(./fonts/D-DIN.otf) format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: block
+}
+
+@font-face {
+    font-family: D-DIN-Bold;
+    src: url(./fonts/D-DIN-Bold.woff2) format("woff2"),url(./fonts/D-DIN-Bold.woff) format("woff"),url(./fonts/D-DIN-Bold.otf) format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: block
+}
+
+@font-face {
+    font-family: D-DIN-Regular;
+    src: url(./fonts/D-DIN.woff2) format("woff2"),url(./fonts/D-DIN.woff) format("woff"),url(./fonts/D-DIN.otf) format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: block
+}
+
+* {
+    box-sizing: border-box;
+    font-family: D-DIN-BOLD,Arial,Verdana,sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    font-family: D-DIN-BOLD,Arial,Verdana,sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+}
+
+/* ----Header Styling-------------------------------------------- */
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+#header-inner {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+#logo-container{
+}
+
+#sx-logo {
+    width: 210px;
+    fill: white;
+    position: relative;
+    bottom: 4px;
+    font-family: D-DIN-Medium,Arial,Verdana,sans-serif;
+}
+
+#nav-link-container {
+    margin-left: 24px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    height: 1.4rem;
+    font-size: 14px;
+}
+
+header nav ul li {
+    margin: 0 12px;
+}
+
+/* ----Main Styling-------------------------------------------- */
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section p {
+    font-family: D-DIN-Regular,Arial,Verdana,sans-serif !important;
+}
+
+#starlink {
+    background: url("https://www.spacex.com/static/images/backgrounds-new/Star15_3137.webp");
+    background-size: cover;
+    background-position: center top; 
+    
+}
+
+#crew {
+    background: url("https://www.spacex.com/static/images/crew-1/dragon-window-desktop.webp");
+    background-size: cover;
+    background-position: center top; 
+}
+#dragon {
+    background: url("https://www.spacex.com/static/images/backgrounds/iss_game.webp");
+    background-size: cover;
+    background-position: center top; 
+}
+#starship {
+    background: url("https://www.spacex.com/static/images/crew-1/SN8.webp");
+    background-size: cover;
+    background-position: center right; 
+}
+#nasa {
+    background: url("https://www.spacex.com/static/images/backgrounds/home_moon.webp");
+    background-size: cover;
+    background-position: center top; 
+}
+
+.subsection {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 153px;
+    padding-top: 153px; 
+}
+
+.subsection h2 {
+    line-height: 32px;
+    font-size: 20px;
+    font-family: D-DIN-Regular;
+}
+
+.subsection h3 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.subsection p {
+    font-size: 16px;
+}
+
+.subsection button {
+    width: 164px;
+    height: 54px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 14px;
+}
+
+#starlink h2 {
+    margin-bottom: 10px;
+}
+
+#starlink h3 {
+    margin-bottom: 50px;
+}
+
