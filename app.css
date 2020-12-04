@@ -62,8 +62,6 @@ header {
     align-items: center;
     padding-left: 50px;
 }
-#logo-container{
-}
 
 #sx-logo {
     width: 210px;
@@ -77,15 +75,40 @@ header {
     margin-left: 24px;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     align-items: center;
     height: 1.4rem;
     font-size: 14px;
 }
 
-header nav ul li {
+nav ul li {
     margin: 0 12px;
+}
+
+#hamburger {
+    height: 2px;
+    width: 16px;
+    background-color: white;
+    position: absolute;
+    right: 33px;
+    top: 51px;
+}
+#hamburger:before {
+    display: block;
+    position: relative;
+    content: '';
+    top: 4px;
+    height: 2px;
+    background-color: white;
+}
+#hamburger:after {
+    display: block;
+    position: relative;
+    content: '';
+    top: -6px;
+    height: 2px;
+    background-color: white;
 }
 
 /* ----Main Styling-------------------------------------------- */
@@ -99,17 +122,24 @@ section p {
     font-family: D-DIN-Regular,Arial,Verdana,sans-serif !important;
 }
 
+#arrow {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    background: transparent;
+}
+
 #starlink {
-    background: url("https://www.spacex.com/static/images/backgrounds-new/Star15_3137.webp");
+    background: url("https://www.spacex.com/static/images/backgrounds-new/CRS21_vertnight_3247.webp");
     background-size: cover;
-    background-position: center top; 
+    background-position: center; 
     
 }
 
 #crew {
     background: url("https://www.spacex.com/static/images/crew-1/dragon-window-desktop.webp");
     background-size: cover;
-    background-position: center top; 
+    background-position: center; 
 }
 #dragon {
     background: url("https://www.spacex.com/static/images/backgrounds/iss_game.webp");
@@ -138,12 +168,14 @@ section p {
     justify-content: flex-end;
     padding-bottom: 153px;
     padding-top: 153px; 
+    padding-right: 825px;
 }
 
 .subsection h2 {
     line-height: 32px;
     font-size: 20px;
     font-family: D-DIN-Regular;
+    text-shadow: 0px 0px 5px black;
 }
 
 .subsection h3 {
@@ -154,6 +186,7 @@ section p {
 
 .subsection p {
     font-size: 16px;
+    line-height: 1.5rem;
 }
 
 .subsection button {
@@ -162,13 +195,55 @@ section p {
     background-color: transparent;
     border: 2px solid white;
     font-size: 14px;
+    margin-top: 50px;
 }
 
-#starlink h2 {
+#dragon h3 {
+    margin-bottom: 25px;
+}
+ 
+#starlink h2{
     margin-bottom: 10px;
 }
 
-#starlink h3 {
-    margin-bottom: 50px;
+#crew h3, #nasa h3 {
+    margin-bottom: 25px;
 }
 
+#starship .subsection {
+    justify-content: flex-start;
+    padding-top: 125px;
+}
+
+#starship h3 {
+    margin-bottom: 20px;
+}
+
+#nasa .subsection {
+    padding-left: 825px;
+    padding-right: 60px;
+    justify-content: center;
+}
+
+#nasa h2 {
+    padding-bottom: 13px;
+}
+
+/* ----FOOTER Styling-------------------------------------------- */
+
+#nav-footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-footer ul li {
+    font-size: 12px;
+    margin: 0 22px;
+}
+
+#copyright {
+    font-family: D-DIN-Regular;
+    opacity: 0.5;
+}
